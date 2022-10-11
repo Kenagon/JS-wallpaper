@@ -1,0 +1,15 @@
+body {
+    background-color: #2596be;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+#eye, #eye img {
+    position: absolute;
+}

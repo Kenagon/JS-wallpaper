@@ -3,10 +3,12 @@
   const anchorX = rect.left + rect.width / 2;
   const anchorY = rect.top + rect.height / 2;
   const eye = document.getElementById('eye');
+  let mouseX = 0;
+  let mouseY = 0;
 
 document.addEventListener('mousemove', (e) => {
-    const mouseX = e.clientX;
-    const mouseY = e.clientY;
+    mouseX = e.clientX;
+    mouseY = e.clientY;
     const angleDeg = angle(mouseX, mouseY, anchorX, anchorY,);
     eye.style.transform = `rotate(${90+ angleDeg}deg)`;
 })
